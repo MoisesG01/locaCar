@@ -1,6 +1,6 @@
+/* Banner.module.scss */
 .banner {
     position: relative;
-    background-image: url('https://i0.wp.com/loucosporcarro.com.br/wp-content/uploads/2011/05/carro-sol-e-estrada-wallpaper-16412.jpg?ssl=1');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,6 +97,18 @@
   
   .arrow {
     font-size: 1rem;
+  }
+  
+  /* Estilos para versão A */
+  .ctaA {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    border-radius: 10px;
+  }
+  
+  /* Estilos para versão B */
+  .ctaB {
+    background: linear-gradient(135deg, #00c9a7, #007bff);
+    border-radius: 4px;
   }
   
   @media (max-width: 768px) {

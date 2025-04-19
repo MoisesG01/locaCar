@@ -22,7 +22,6 @@ const Footer = () => {
     <>
       <footer className={styles.footer}>
         <div className={styles.container}>
-          {/* Logo e descrição */}
           <div className={styles.section}>
             <div className={styles.logo}>
               <FaCar size={24} />

@@ -4,7 +4,7 @@ interface Props {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
-  maxVisiblePages?: number; // Número máximo de páginas visíveis (default: 5)
+  maxVisiblePages?: number; 
 }
 
 const Pagination = ({

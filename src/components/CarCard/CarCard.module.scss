@@ -11,8 +11,8 @@
     position: relative;
     
     &.unavailable {
-      opacity: 0.6; /* Opacidade reduzida para os carros indisponíveis */
-      pointer-events: none; /* Impede interações com o card */
+      opacity: 0.6; 
+      pointer-events: none; 
     }
   
     &:hover {
@@ -48,13 +48,12 @@
       border-radius: 12px;
       font-weight: 600;
   
-      /* Cores para disponibilidade */
       &.available {
-        background-color: #22c55e; /* Verde para disponível */
+        background-color: #22c55e; 
       }
   
       &.unavailable {
-        background-color: rgba(55, 65, 81, 0.5); /* Cinza mais opaco para indisponível */
+        background-color: rgba(55, 65, 81, 0.5); 
       }
     }
   }

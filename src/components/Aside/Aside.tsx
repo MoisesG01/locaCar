@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import styles from './Aside.module.scss';
 
 const Aside = () => {
-  // Dados fictícios para o gráfico de preços
+  
   const data = [
     { name: 'Jan', price: 120 },
     { name: 'Feb', price: 200 },

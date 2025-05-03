@@ -1,0 +1,122 @@
+/* CarRecommendation.module.scss */
+
+/* Modal Styles */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Fundo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 9999; /* Garantir que o modal fique na frente de outros elementos */
+}
+
+.modalContent {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 9999; /* Garantir que o conteúdo do modal também tenha z-index alto */
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo das bolhas de mensagem */
+.botBubble {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.avatar {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.bubbleText {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  max-width: 70%;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo para as opções de resposta */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.optionButton {
+  padding: 0.6rem 1.1rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.optionButton:hover {
+  background-color: #1e40af;
+}
+
+/* Botão para reiniciar a recomendação */
+.restart {
+  margin-top: 1rem;
+  padding: 0.6rem 1.1rem;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+/* Botão de fechar o modal */
+.closeButton {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #ff4c3b;
+}
+
+/* Animação de Fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
